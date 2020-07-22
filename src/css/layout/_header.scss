@@ -1,0 +1,26 @@
+header{
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    padding:30px 0;
+    border-bottom:1px solid #fff;
+
+    nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 auto;
+    width:100%;
+    
+.logo a{
+    font-size: 30px;
+    color:#fff;
+}
+.links a{
+    color:rgb(167, 167, 167);
+}
+}
+}
+

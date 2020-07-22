@@ -1,0 +1,49 @@
+#background-hero{
+    height:100vh;
+
+}
+.swiper-wrapper{
+    position: relative;
+}
+
+.swiper-slide::before{
+    content:'';
+    position: absolute;
+    top:0;bottom:0;left:0;right:0;
+    background: #0005;
+
+}
+
+
+.info-hero{
+    position: relative;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.copyright{
+    
+    text-align: center;
+}
+
+.block,.agent,.way,.article{
+    margin-right:20px;
+}
+.works-how__content__title,.news-event__content__title,.contact-us__content__title{
+    text-align:center;
+}
+
+section{
+    padding:100px 0;
+}
+.contact-us{
+    background-color:rgb(233, 233, 233);
+}
+footer{
+    background-color: rgb(45, 46, 49);
+    padding:100px;
+
+}

@@ -1,95 +1,398 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="css/style.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900|Oswald:300,400,700" rel="stylesheet">
-    </head>
-    <body>
-        <header>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900|Oswald:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+</head>
+<body>
+    
+    <!--  nav + header -->
+    <header>
+        <!-- navigation -->
+        <nav class="wrapper">
+            <div class="logo">
+                <a href="index.html">warehouse</a>
+            </div>
+            <div class="links">
+                <a href="#background-hero">home</a>
+                <a href="#r-e">properties</a>
+                <a href="#w-h">agents</a>
+                <a href="#n-e">news</a>
+                <a href="#c-u">contact</a>
+            </div>
+        </nav>
+        <!-- End navigation -->
+        
+        
+    </header>
+    <!-- End nav + header -->
+    
+    
+    <!-- Main content -->
+    <main>
+        
+        <!-- Header background ( slide )-->
+        <section id="background-hero" class="swiper-container">
             
-            <nav>
-                <div>
-                    <a href="index.html">WAREHOUSE</a>
+                <div class="swiper-wrapper">
+                    
+                    <!-- changing slides -->
+                    
+                    <!-- slide 1 -->
+                    <div class="swiper-slide" style="background:url('img/hero_1.jpg')no-repeat center/cover;">
+                        <div class="info-hero wrapper">
+                            <h1>buy & sell property here</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quam doloribus reprehenderit dolore adipisci rerum?
+                            </p>
+                            <div>
+                                <a href="#" class="btn">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slide 1 -->
+                    
+                    <!-- slide 2 -->
+                    <div class="swiper-slide" style="background:url('img/hero_2.jpg')no-repeat center/cover;">
+                        <div class="info-hero wrapper">
+                            <h1>find you perfect property for your home</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quam doloribus reprehenderit dolore adipisci rerum?
+                            </p>
+                            <div>
+                                <a href="#" class="btn">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slide 2 -->
+                    
                 </div>
-                <div>
-                    <a href="#">HOME</a>
-                    <a href="#">PROPERTIES</a>
-                    <a href="#">AGENTS</a>
-                    <a href="#">NEWS</a>
-                    <a href="#">CONTACT/a>
+            
+        </section>
+        <!-- end background -->
+        
+        
+        <!-- Our Outstanding Houses -->
+        <section class="outstanding-house" id="o-h">
+            <div class="outstanding-house__content  wrapper">
+                <!-- title -->
+                <div class="outstanding-house__content__title"> 
+                    <h2>our outstanding houses</h2>
                 </div>
-            </nav>
-            <div>
-                <h1>BUY & SELL PROPERTY HERE</h1>
+                <!-- 3 blocks -->
+                <div class="outstanding-house__content__blocks flex">
+                    <!-- block 1 -->
+                    <div class="block">
+                        <div>
+                            <img src="img/property_1-sm.jpg" alt="inside of a condo">
+                        </div>
+                        <div>
+                            <h3>Un petit appart cosy</h3>
+                            <p>New York - USA</p>
+                            <p>$20,000,000</p>
+                        </div>
+                    </div>
+                    <!-- block 2 -->
+                    <div class="block">
+                        <div>
+                            <img src="img/property_2-sm.jpg" alt="dining room">
+                        </div>
+                        <div>
+                            <h3>La maisonnette toute propre</h3>
+                            <p>Ottignies - BEL</p>
+                            <p>$40,000,000</p>
+                        </div>
+                    </div>
+                    <!-- block 3 -->
+                    <div class="block">
+                        <div>
+                            <img src="img/property_3-sm.jpg" alt="open space corridor">
+                        </div>
+                        <div>
+                            <h3>Un petit appart cosy</h3>
+                            <p>Auderghem - BEL</p>
+                            <p>$1,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Our Outstanding Houses -->
+        
+        <!-- Real Estate Agents -->
+        <section class="real-estate" id="r-e">
+            <div class="real-estate__content wrapper">
+                <!-- title -->
+                <div class="real-estate__content__title">
+                    <h2>real estate agents</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quam doloribus reprehenderit dolore adipisci rerum?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.
                     </p>
-                <div>
-                    <a href="#" class="btn">Get Started</a>
+                </div>
+                <!-- end title -->
+                
+                <!-- 3 agents -->
+                <div class="real-estate__content__agents flex">
+                    <!-- agent 1 -->
+                    <div class="agent">
+                        <div class="agent-pic">
+                            <img src="img/person_1.jpg" alt="ed sheeran picture">
+                        </div>
+                        <div class="agent-title">
+                            <h3>Ed Sheeran</h3>
+                            <p>Head Director</p>
+                        </div>
+                    </div>
+                    <!-- agent 2 -->
+                    <div class="agent">
+                        <div class="agent-pic">
+                            <img src="img/person_2.jpg" alt="bart simpson picture">
+                        </div>
+                        <div class="agent-title">
+                            <h3>bart simpson</h3>
+                            <p>Real Estate Agent</p>
+                        </div>
+                    </div>
+                    <!-- agent 3 -->
+                    <div class="agent">
+                        <div class="agent-pic">
+                            <img src="img/person_3.jpg" alt="ben thompson picture">
+                        </div>
+                        <div class="agent-title">
+                            <h3>ben thompson</h3>
+                            <p>Big Smile Guy</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end 3 agents -->
+            </div>    
+        </section>
+        <!-- End Real Estate Agents -->
+        
+        
+        <!-- How it Works -->
+        <section class="works-how" id="w-h">
+            <div class="works-how__content wrapper">
+                <!-- title -->
+                <div class="works-how__content__title">
+                    <h2>how it works</h2>
+                </div>
+                <!-- 3 ways -->
+                <div class="works-how__content__ways flex">
+                    <!-- way 1 -->
+                    <div class="way">
+                        <div>
+                            <p>01.</p>
+                            <img src="img" alt="">
+                        </div>
+                        <div>
+                            <h3>find property</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- way 2 -->
+                    <div  class="way">
+                        <div>
+                            <p>02.</p>
+                            <!-- <img src="" alt=""> -->
+                            <i class="fas fa-house-user"></i>
+                            
+                            
+                        </div>
+                        <div>
+                            <h3>buy property</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- way 3 -->
+                    <div  class="way">
+                        <div>
+                            <p>03.</p>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h3>outstanding houses</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <!-- End How it Works -->
+        
+        <!-- News & Event -->
+        <section class="news-event" id="n-e">
+            <div class="news-event__content wrapper">
+                <!-- title -->
+                <div class="news-event__content__title">
+                    <h2>news & event</h2>
+                </div>
+                <!-- the three articles  -->
+                <div class="news-event__content__articles flex">
+                    <!-- article 1 -->
+                    <div  class="article">
+                        <div>
+                            <img src="img/img_1.jpg" alt="man sitting in a chair">
+                        </div>
+                        <div>
+                            <h4>news title 1</h4>
+                            <span>Allison Holmes • Jan 18, 2019</span>
+                            <span>Outstanding properties</span>
+                        </div>
+                    </div>
+                    <!-- article 2 -->
+                    <div class="article">
+                        <div>
+                            <img src="img/img_2.jpg" alt="bedroom">
+                        </div>
+                        <div>
+                            <h4>news title 2</h4>
+                            <span>James Phelps • Jan 18, 2019</span>
+                            <span>From the Market</span>
+                        </div>
+                    </div>
+                    <!-- article 3 -->
+                    <div  class="article">
+                        <div>
+                            <img src="img/img_3.jpg" alt="desk">
+                        </div>
+                        <div>
+                            <h4>news title 3</h4>
+                            <span>Allison Holmes • Jan 18, 2019</span>
+                            <span>Ideas</span>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <!--  End News & Event -->
+        
+        <!-- Contact Us -->
+        <section class="contact-us" id="c-u">
+            <div class="contact-us__content wrapper ">
+                <!-- title -->
+                <div class="contact-us__content__title">
+                    <h2>contact us</h2>
+                </div>
+                <!-- contact -->
+                <div class="contact-us__content__contact flex">
+                    <!-- get in touch block -->
+                    <div class="form-block">
+                        <h3>get in touch</h3>
+                        <form action="">
+                            <div>
+                                <div>
+                                    <label for="fname">First Name</label>
+                                    <input type="text" id="fname" name="first_name">
+                                </div>
+                                <div>
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" id="lname" name="last_name">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="mail">Email </label>
+                                <input type="email" id="mail" name="email">
+                            </div>
+                            <div>
+                                <label for="sub">Subject</label>
+                                <input type="text" id="sub" name="sub">
+                            </div>
+                            <div>
+                                <label for="msg">Message</label>
+                                <textarea id="msg" name="message"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- infos block-->
+                    <div class="infos-block">
+                        <div>
+                            <p>Adress</p>
+                            <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                        </div>
+                        <div>
+                            <p>Phone</p>
+                            <p>+1 232 3235 324</p>
+                        </div>  
+                        <div>  
+                            <p>Email Address</p>
+                            <p>youremail@domain.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Us -->      
+    </main>
+    <!-- End Main content -->
+    
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper">
+            <div class="flex">
+                <div>
+                    <h4>about us</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.
+                    </p>
+                </div>
+                <div>
+                    <h4>follow us</h4>
+                    <div>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Copyright © 2020 All rights reserved | This template is made with  by Colorlib
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+    
+    
+    
+    <!-- Swiper JS -->
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    
+    <script>
+        var swiper = new Swiper('.swiper-container', {
             
-        </header>
-
-        <main>
-
-
-            <!-- Our Outstanding Houses -->
-            <section class="outstanding-house">
-            </section>
-            <!-- End Our Outstanding Houses -->
-
-            <!-- Real Estate Agents -->
-            <section class="real-estate"></section>
-            <!-- End Real Estate Agents -->
-
-
-            <!-- How it Works -->
-            <section class="works-how"></section>
-            <!-- End How it Works -->
-
-            <!-- News & Event -->
-            <section class="news-event">
-                <div>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h4>NEWS TITLE 1</h4>
-                        <span>Allison Holmes • Jan 18, 2019</span>
-                        <span>Outstanding properties</span>
-                    </div>
-                </div>
-                <div></div>
-                <div></div>
-            </section>
-            <!--  End News & Event -->
-
-            <!-- Contact Us -->
-            <section class="contact-us">
-                <div></div>
-                <div></div>
-            </section>
-            <!-- End Contact Us -->      
-        </main>
-
-        <footer>
-            <div>
-                <div></div>
-                <div></div>
-            </div>
-            <div></div>
-        </footer>
-
-        
-
-
-
-        
-
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>    
+    
     <script src="js/main.min.js"></script>
-    </body>
+</body>
 </html>
