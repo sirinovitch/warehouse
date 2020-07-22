@@ -1,0 +1,33 @@
+{
+  "name": "warehouse_evaluation",
+  "version": "1.0.0",
+  "description": "Evaluation wp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sirine Zidane",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cache": "^1.1.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-smushit": "^1.2.0",
+    "gulp-wait": "0.0.2",
+    "imagemin": "^6.1.0",
+    "imagemin-giflossy": "^5.1.10",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^7.0.0",
+    "imagemin-zopfli": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "warehouse"
+  }
+}
