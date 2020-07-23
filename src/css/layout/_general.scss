@@ -1,5 +1,6 @@
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth
 }
 html, body, header, main, section, footer{
     width:100%;
@@ -7,11 +8,18 @@ html, body, header, main, section, footer{
 .wrapper{
     max-width:1140px;
     margin:0 auto;
+    @media screen and(max-width:1200px){
+       max-width:1000px;
+    }
+    @media screen and(max-width: 768px){
+        max-width:600px
+    }
 }
 
 img{
     max-width:100%;
     object-fit:cover;
+    display: block;
 }
 h4{
     margin-bottom: 20px;
@@ -28,4 +36,17 @@ h3{
     font-size: 16px;
     border-radius: 5px;
     margin-top: 15px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    @media screen and(max-width:1200px){
+
+    }
+    @media screen and(max-witdh: 768px){
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }

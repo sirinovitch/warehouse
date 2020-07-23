@@ -3,9 +3,11 @@ header{
     display: flex;
     justify-content: center;
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     padding:30px 0;
     border-bottom:1px solid #fff;
+    transition: 0.5s all ease-in-out;
+
 
     nav{
     display: flex;
@@ -16,6 +18,8 @@ header{
     font-family: 'Oswald';
     font-weight:300;
     text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+
 .logo{
     width:60%;
 }
@@ -31,7 +35,7 @@ header{
     justify-content: space-around;
 }
 .links a{
-    color:rgb(167, 167, 167);
+    color:rgb(141, 141, 141);
     &:hover{
         color:#fff;
         transition: all ease-in-out 0.2s;
@@ -41,3 +45,14 @@ header{
 }
 }
 
+.nav-js{
+    background-color: #fff;
+    color: #000;
+    padding: 15px 0;
+    .logo a{
+        font-size: 30px;
+        color:#000;
+        text-transform: uppercase;
+       
+    }
+}

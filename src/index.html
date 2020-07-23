@@ -9,14 +9,16 @@
     <link href="css/style.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/581a249cef.js" crossorigin="anonymous"></script>
+
     
 </head>
 <body>
     
     <!--  nav + header -->
-    <header>
+    <header id="header">
         <!-- navigation -->
-        <nav class="wrapper">
+        <nav class="wrapper" id="nav">
             <div class="logo">
                 <a href="index.html">warehouse</a>
             </div>
@@ -190,9 +192,8 @@
                 <div class="works-how__content__ways flex">
                     <!-- way 1 -->
                     <div class="way">
-                        <div>
-                            <p>01.</p>
-                            <img src="img" alt="">
+                        <div class="way-lign">
+                            <p>01.<i class="fas fa-house-user"></i></p>
                         </div>
                         <div>
                             <h3>find property</h3>
@@ -203,12 +204,8 @@
                     </div>
                     <!-- way 2 -->
                     <div  class="way">
-                        <div>
-                            <p>02.</p>
-                            <!-- <img src="" alt=""> -->
-                            <i class="fas fa-house-user"></i>
-                            
-                            
+                        <div class="way-lign">
+                            <p>02.<i class="fas fa-file-invoice-dollar"></i></p>
                         </div>
                         <div>
                             <h3>buy property</h3>
@@ -219,9 +216,8 @@
                     </div>
                     <!-- way 3 -->
                     <div  class="way">
-                        <div>
-                            <p>03.</p>
-                            <img src="" alt="">
+                        <div class="way-lign">
+                            <p>03.<i class="fas fa-home"></i></p>
                         </div>
                         <div>
                             <h3>outstanding houses</h3>
@@ -246,35 +242,44 @@
                 <div class="news-event__content__articles flex">
                     <!-- article 1 -->
                     <div  class="article">
-                        <div>
-                            <img src="img/img_1.jpg" alt="man sitting in a chair">
+                        <div class="article-image">
+                            <a href="#"><img src="img/img_1.jpg" alt="man sitting in a chair"></a>
                         </div>
-                        <div>
-                            <h4>news title 1</h4>
-                            <span>Allison Holmes • Jan 18, 2019</span>
-                            <span>Outstanding properties</span>
+                        <div class="article-infos">
+                            <h4><a href="#">news title 1</a></h4>
+                            
+                            <a href="#">Allison Holmes •</a> 
+                            <a href="#"> Jan 18, 2019</a>
+                            <a href="#">Outstanding properties</a>
+                            
                         </div>
                     </div>
                     <!-- article 2 -->
                     <div class="article">
-                        <div>
-                            <img src="img/img_2.jpg" alt="bedroom">
+                        <div class="article-image">
+                            <a href="#"><img src="img/img_2.jpg" alt="bedroom"></a>
                         </div>
-                        <div>
-                            <h4>news title 2</h4>
-                            <span>James Phelps • Jan 18, 2019</span>
-                            <span>From the Market</span>
+                        <div class="article-infos">
+                            <h4><a href="#">news title 2</a></h4>
+                            
+                            <a href="#">James Phelps •</a>
+                            <a href="#"> Jan 18, 2019</a>
+                            <a href="#">From the Market</a>
+                            
                         </div>
                     </div>
                     <!-- article 3 -->
                     <div  class="article">
-                        <div>
-                            <img src="img/img_3.jpg" alt="desk">
+                        <div class="article-image">
+                            <a href="#"><img src="img/img_3.jpg" alt="desk"></a>
                         </div>
-                        <div>
-                            <h4>news title 3</h4>
-                            <span>Allison Holmes • Jan 18, 2019</span>
-                            <span>Ideas</span>
+                        <div class="article-infos">
+                            <h4><a href="#">news title 3</a></h4>
+                            
+                            <a href="#">Allison Holmes •</a>
+                            <a href="#"> Jan 18, 2019</a>
+                            <a href="#">Ideas</a>
+                            
                         </div>
                     </div>  
                 </div>
@@ -296,25 +301,25 @@
                     <div class="form-block">
                         <h3>get in touch</h3>
                         <form action="">
-                            <div>
-                                <div>
+                            <div class="form-layout names">
+                                <div class="names-w">
                                     <label for="fname">First Name</label>
                                     <input type="text" id="fname" name="first_name">
                                 </div>
-                                <div>
+                                <div class="names-w">
                                     <label for="lname">Last Name</label>
                                     <input type="text" id="lname" name="last_name">
                                 </div>
                             </div>
-                            <div>
+                            <div  class="form-layout">
                                 <label for="mail">Email </label>
                                 <input type="email" id="mail" name="email">
                             </div>
-                            <div>
+                            <div  class="form-layout">
                                 <label for="sub">Subject</label>
                                 <input type="text" id="sub" name="sub">
                             </div>
-                            <div>
+                            <div  class="form-layout">
                                 <label for="msg">Message</label>
                                 <textarea id="msg" name="message"></textarea>
                             </div>
@@ -323,16 +328,16 @@
                     <!-- infos block-->
                     <div class="infos-block">
                         <div>
-                            <p>Adress</p>
+                            <strong>Address</strong>
                             <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
                         </div>
-                        <div>
-                            <p>Phone</p>
-                            <p>+1 232 3235 324</p>
+                        <div class="infos-block-color">
+                            <strong>Phone</strong>
+                            <p><a href="#">+1 232 3235 324</a></p>
                         </div>  
-                        <div>  
-                            <p>Email Address</p>
-                            <p>youremail@domain.com</p>
+                        <div class="infos-block-color">  
+                            <strong>Email Address</strong>
+                            <p><a href="#">youremail@domain.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -345,20 +350,20 @@
     <!-- Footer -->
     <footer>
         <div class="wrapper">
-            <div class="flex">
-                <div>
+            <div class="footer-disp flex">
+                <div class="footer-disp-part1">
                     <h4>about us</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.
                     </p>
                 </div>
-                <div>
+                <div class="footer-disp-part2">
                     <h4>follow us</h4>
-                    <div>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+                    <div class="social-m">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -390,10 +395,7 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+            
         });
     </script>    
     

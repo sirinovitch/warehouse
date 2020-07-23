@@ -19,6 +19,10 @@
     position: relative;
     height:100%;
     max-width:25%;
+    @media screen and(max-width:1200px){
+        width:50%
+        
+    }
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,23 +44,21 @@
     height:12px !important;
     
 }
-// general
-.flex{
-    display: flex;
-}
 
 
+// general home
 .works-how__content__title,.news-event__content__title,.contact-us__content__title{
     text-align:center;
 }
 
 section{
-    padding:100px 0;
+    padding:80px 0;
 }
 
 // outstanding houses section
 .outstanding-house__content__blocks{
     margin-top:80px;
+    width:100%;
 }
 .block-text{
     margin:20px 0;
@@ -69,13 +71,19 @@ section{
 
 .block{
     position: relative;
-    margin-right:80px;
+    width: 30%;
+        @media screen and(max-width: 1000px){
+            width: 45%;
+            margin: 30px 0;
+        }
+        @media screen and(max-width: 768px){
+            width: 80%;
+            margin: 30px auto;
+        }
 .block-text{
     transition: all ease-in-out 0.2s;
 }
-    &:nth-child(3){
-        margin-right: 0;
-    }
+   
     &:hover{
         &::before{
             top:15px;bottom:-15px;left:15px;right:-15px;
@@ -110,29 +118,196 @@ section{
         
        
     }
-    .real-estate__content__title{
-        margin-bottom: 30px;
-        max-width: 45%;
-    }
+    
+    margin-bottom: 30px;
+    max-width: 45%;
+    
+}
+.real-estate__content__agents{
+    width:100%;
+}
+.agent{
+    width:32%;
+        
+        &-title{
+            padding:30px;
+            background-color:rgb(25, 201, 134) ;
+            font-size: 30px;
+            p{
+                font-weight: 400;
+                font-size: 20px;
+            }
+        }
+    
+}
+.agent-pic{
+    overflow: hidden;
+    transition: all ease-in-out 0.4s;
+
+    // height:;
+    // width:;
+}
+.agent-pic img:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out 0.4s;
+
 }
 
+// how it works section
+.works-how{
+    .works-how__content__title{
+        margin-bottom: 100px;;
+        h2{
+        color: #000;
+        }
+    }
+    
 
+    background:rgb(25, 201, 134) ;
+}
+.works-how__content__ways{
+    text-align: center;
+    width:100%;
+    font-size: 25px;
+    .way {
+        width:calc(100% / 3);
+        
+        p{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+            text-align: center;
+            padding:20px;
+        }
+    }
+    
+}
+.way-lign{
+    margin-bottom: 25px;;
+    p{
+        font-size: 18px;  
+    }
+}
+.fas{
+            font-size: 40px;
+            margin:0 10px;
+        }
 
+// news & event section
+.news-event__content__articles{
+    margin-top: 80px;
+    width:100%;
+    .article{
+       width:32%;
+    }
+}
+.article-image{
+            margin-bottom: 30px;;
+}
 
+.article-infos a{
+    
+    font-size: 14px;
+    color:rgb(167, 167, 167);
+    &:nth-child(4){
+        color: rgb(25, 201, 134);
+    }
+          
+    
+}
+
+h4 a{
+        font-size: 20px !important;
+        color:#000 !important;
+    }
 
 // contact section 
 
 .contact-us{
-    background-color:rgb(233, 233, 233);
+    background-color:rgb(243, 246, 250);
+}
+.contact-us__content__contact{
+    width:100%;
 }
 
-// footer
-footer{
-    background-color: rgb(45, 46, 49);
-    padding:100px;
-.copyright{
-    text-align: center;
-    margin:15px 0;
+.form-block{
+    width:60%;
+    background-color:#fff;
+    padding: 50px;
+    margin-right: 30px;
+    @media screen and(max-width:1200px){
+        width:50%
+    }
+    h3{
+        font-size: 30px;
+    }
+}
+.infos-block{
+    width:40%;
+    @media screen and(max-width:1200px){
+        width:50%
+    }
+    @media screen and(max-witdh: 768px){
+        
+    }
+    color:rgb(167, 167, 167);
+    background-color:#fff;
+    padding: 50px;
+    strong{
+        font-weight: 600;
+    }
+    p{
+        margin: 15px 0;
+    }
+    &-color{
+            p a{
+                color: rgb(25, 201, 134);
+            }
+        
+    }
+}
+form{
+    margin-top:60px;
+    width:100%;
+
+}
+.form-layout{
+    width:100%;
+    margin-bottom: 20px;
+    label{
+        display: block;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+    input{
+        padding:10px;
+        border:0.5px solid rgb(167, 167, 167);
+        border-radius: 5px ;
+        width:100%;
+    }
+    textarea{
+        padding:10px;
+        width: 100%;
+        resize: vertical;
+        height:300px;
+        
+
+    }
+    
+}
+.names{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    &-w{
+        width:45%;
+    }
 }
 
+@media screen and(max-width:1200px){
+   
+
+}
+@media screen and(max-witdh: 768px){
+    
 }
