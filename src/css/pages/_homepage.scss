@@ -1,3 +1,4 @@
+// slider bg
 #background-hero{
     height:100vh;
 
@@ -13,24 +14,38 @@
     background: #0005;
 
 }
-
-
 .info-hero{
+    text-align: center;
     position: relative;
-}
+    height:100%;
+    max-width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p{
+        margin:20px 0;
+        font-size: 25px;
+        color: #fff;
+        line-height: 1.5;
+    };
 
+}
+.swiper-pagination{
+    bottom:80px !important;
+}
+.swiper-pagination-bullet{
+    background: rgb(25, 201, 134) !important;
+    border-color: #fff;
+    width:12px !important;
+    height:12px !important;
+    
+}
+// general
 .flex{
     display: flex;
 }
 
-.copyright{
-    
-    text-align: center;
-}
 
-.block,.agent,.way,.article{
-    margin-right:20px;
-}
 .works-how__content__title,.news-event__content__title,.contact-us__content__title{
     text-align:center;
 }
@@ -38,11 +53,86 @@
 section{
     padding:100px 0;
 }
+
+// outstanding houses section
+.outstanding-house__content__blocks{
+    margin-top:80px;
+}
+.block-text{
+    margin:20px 0;
+    p{
+        color:rgb(167, 167, 167);
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+}
+
+.block{
+    position: relative;
+    margin-right:80px;
+.block-text{
+    transition: all ease-in-out 0.2s;
+}
+    &:nth-child(3){
+        margin-right: 0;
+    }
+    &:hover{
+        &::before{
+            top:15px;bottom:-15px;left:15px;right:-15px;
+            opacity: 1;
+        }
+        .block-text{
+            margin-left:25px;
+        }
+        h3{
+            color:#fff;
+        }
+    }
+}
+
+.block::before{
+    content: '';
+    position: absolute;
+    top:0;bottom:0;left:0;right:0;
+    background:#000;
+    transition: all ease-in-out 0.2s;
+    z-index: -1;
+    opacity: 0;
+}
+
+// real estate agents section
+
+.real-estate__content__title{
+    p{
+        font-size: 25px;
+        color:rgb(167, 167, 167);
+        line-height: 1.5;
+        
+       
+    }
+    .real-estate__content__title{
+        margin-bottom: 30px;
+        max-width: 45%;
+    }
+}
+
+
+
+
+
+// contact section 
+
 .contact-us{
     background-color:rgb(233, 233, 233);
 }
+
+// footer
 footer{
     background-color: rgb(45, 46, 49);
     padding:100px;
+.copyright{
+    text-align: center;
+    margin:15px 0;
+}
 
 }

@@ -1,0 +1,333 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.9em;
+  line-height: 1.2;
+}
+
+h2 {
+  color: #19c986;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-weight: 300;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html, body, header, main, section, footer {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #19c986;
+  color: #fff;
+  padding: 20px 50px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+header {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 10;
+  padding: 30px 0;
+  border-bottom: 1px solid #fff;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  font-family: 'Oswald';
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+header nav .logo {
+  width: 60%;
+}
+
+header nav .logo a {
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+header nav .links {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav .links a {
+  color: #a7a7a7;
+}
+
+header nav .links a:hover {
+  color: #fff;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+#background-hero {
+  height: 100vh;
+}
+
+.swiper-wrapper {
+  position: relative;
+}
+
+.swiper-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0005;
+}
+
+.info-hero {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  max-width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info-hero p {
+  margin: 20px 0;
+  font-size: 25px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.swiper-pagination {
+  bottom: 80px !important;
+}
+
+.swiper-pagination-bullet {
+  background: #19c986 !important;
+  border-color: #fff;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.works-how__content__title, .news-event__content__title, .contact-us__content__title {
+  text-align: center;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.outstanding-house__content__blocks {
+  margin-top: 80px;
+}
+
+.block-text {
+  margin: 20px 0;
+}
+
+.block-text p {
+  color: #a7a7a7;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.block {
+  position: relative;
+  margin-right: 80px;
+}
+
+.block .block-text {
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.block:nth-child(3) {
+  margin-right: 0;
+}
+
+.block:hover::before {
+  top: 15px;
+  bottom: -15px;
+  left: 15px;
+  right: -15px;
+  opacity: 1;
+}
+
+.block:hover .block-text {
+  margin-left: 25px;
+}
+
+.block:hover h3 {
+  color: #fff;
+}
+
+.block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  z-index: -1;
+  opacity: 0;
+}
+
+.real-estate__content__title p {
+  font-size: 25px;
+  color: #a7a7a7;
+  line-height: 1.5;
+}
+
+.real-estate__content__title .real-estate__content__title {
+  margin-bottom: 30px;
+  max-width: 45%;
+}
+
+.contact-us {
+  background-color: #e9e9e9;
+}
+
+footer {
+  background-color: #2d2e31;
+  padding: 100px;
+}
+
+footer .copyright {
+  text-align: center;
+  margin: 15px 0;
+}
+/*# sourceMappingURL=style.css.map */

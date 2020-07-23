@@ -4,8 +4,10 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="css/style.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900|Oswald:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     
 </head>
@@ -70,8 +72,10 @@
                         </div>
                     </div>
                     <!-- end slide 2 -->
+                    <!-- Add Pagination -->
                     
                 </div>
+                <div class="swiper-pagination"></div>
             
         </section>
         <!-- end background -->
@@ -89,34 +93,34 @@
                     <!-- block 1 -->
                     <div class="block">
                         <div>
-                            <img src="img/property_1-sm.jpg" alt="inside of a condo">
+                            <img src="img/property_1.jpg" alt="inside of a condo">
                         </div>
-                        <div>
+                        <div class="block-text">
                             <h3>Un petit appart cosy</h3>
                             <p>New York - USA</p>
-                            <p>$20,000,000</p>
+                            <p class="price">$20,000,000</p>
                         </div>
                     </div>
                     <!-- block 2 -->
                     <div class="block">
                         <div>
-                            <img src="img/property_2-sm.jpg" alt="dining room">
+                            <img src="img/property_2.jpg" alt="dining room">
                         </div>
-                        <div>
+                        <div class="block-text">
                             <h3>La maisonnette toute propre</h3>
                             <p>Ottignies - BEL</p>
-                            <p>$40,000,000</p>
+                            <p class="price">$40,000,000</p>
                         </div>
                     </div>
                     <!-- block 3 -->
                     <div class="block">
                         <div>
-                            <img src="img/property_3-sm.jpg" alt="open space corridor">
+                            <img src="img/property_3.jpg" alt="open space corridor">
                         </div>
-                        <div>
+                        <div class="block-text">
                             <h3>Un petit appart cosy</h3>
                             <p>Auderghem - BEL</p>
-                            <p>$1,000</p>
+                            <p class="price">$1,000</p>
                         </div>
                     </div>
                 </div>
@@ -377,7 +381,6 @@
     
     <script>
         var swiper = new Swiper('.swiper-container', {
-            
             centeredSlides: true,
             autoplay: {
                 delay: 2500,
