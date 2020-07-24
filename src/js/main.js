@@ -13,6 +13,8 @@ window.addEventListener('scroll',function() {
 
     if (dejaScrollay >= 100) {
 
+        
+
 
         monHeader.classList.add("nav-js");
 
@@ -30,20 +32,19 @@ window.addEventListener('scroll',function() {
 
 var monBurger = document.getElementById('burger');
 
-
 var mesLinks = document.querySelector('.links');
 
 var maCroix = document.querySelector('#closed');
 
 
 
-console.log(monBurger);
+// console.log(monBurger);
 
 
 
 function ajoutClasse() { 
 
-    monBurger.classList.add('active');
+    // monBurger.classList.add('active');
 
     mesLinks.classList.add('active');
 
