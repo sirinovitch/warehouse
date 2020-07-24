@@ -1,8 +1,9 @@
 // slider bg
-#background-hero{
+#home{
     height:100vh;
-
 }
+
+
 .swiper-wrapper{
     position: relative;
 }
@@ -20,7 +21,9 @@
     height:100%;
     max-width:25%;
     @media screen and(max-width:1200px){
-        width:50%
+        display: flex;
+        
+        max-width:50% !important;
         
     }
     display: flex;
@@ -125,6 +128,14 @@ section{
 }
 .real-estate__content__agents{
     width:100%;
+    @media screen and(max-width: 1000px){
+        width: 80%;
+        margin: 30px 0;
+    }
+    @media screen and(max-width: 768px){
+        width: 80%;
+        margin: 30px auto;
+    }
 }
 .agent{
     width:32%;
@@ -137,6 +148,14 @@ section{
                 font-weight: 400;
                 font-size: 20px;
             }
+        }
+        @media screen and(max-width: 1000px){
+            width: 45%;
+            margin: 30px 0;
+        }
+        @media screen and(max-width: 768px){
+            width: 80%;
+            margin: 30px auto;
         }
     
 }
@@ -154,7 +173,11 @@ section{
 }
 
 // how it works section
+.works-how__content{
+    width: 100%;;
+}
 .works-how{
+    width:100%;
     .works-how__content__title{
         margin-bottom: 100px;;
         h2{
@@ -164,6 +187,15 @@ section{
     
 
     background:rgb(25, 201, 134) ;
+
+    @media screen and(max-width: 1000px){
+        width: 100%;
+        margin: 30px 0;
+    }
+    @media screen and(max-width: 768px){
+        width: 100%;
+        margin: 30px auto;
+    }
 }
 .works-how__content__ways{
     text-align: center;
@@ -179,6 +211,14 @@ section{
             text-align: center;
             padding:20px;
         }
+    }
+    @media screen and(max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        .way {
+            width:50%;
+        };
     }
     
 }
@@ -199,6 +239,23 @@ section{
     width:100%;
     .article{
        width:32%;
+    }
+    @media screen and(max-width: 1000px){
+        width: 100%;
+        margin: 30px 0;
+            .article{
+                width:40%;
+            }
+    }
+    @media screen and(max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+        margin: 30px auto;
+        .article{
+            width:80%;
+        }
     }
 }
 .article-image{
@@ -228,6 +285,7 @@ h4 a{
 }
 .contact-us__content__contact{
     width:100%;
+    
 }
 
 .form-block{
@@ -236,7 +294,11 @@ h4 a{
     padding: 50px;
     margin-right: 30px;
     @media screen and(max-width:1200px){
-        width:50%
+        width:100%
+    }
+    @media screen and(max-width: 768px){
+        margin: 30px 0;
+        
     }
     h3{
         font-size: 30px;
@@ -245,9 +307,10 @@ h4 a{
 .infos-block{
     width:40%;
     @media screen and(max-width:1200px){
-        width:50%
+        width:80%
     }
-    @media screen and(max-witdh: 768px){
+    @media screen and(max-width: 768px){
+        width:100%
         
     }
     color:rgb(167, 167, 167);
@@ -304,10 +367,3 @@ form{
     }
 }
 
-@media screen and(max-width:1200px){
-   
-
-}
-@media screen and(max-witdh: 768px){
-    
-}

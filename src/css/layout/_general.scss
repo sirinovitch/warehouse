@@ -11,9 +11,13 @@ html, body, header, main, section, footer{
     @media screen and(max-width:1200px){
        max-width:1000px;
     }
-    @media screen and(max-width: 768px){
-        max-width:600px
+    @media screen and(max-width: 900px){
+        max-width:800px;
     }
+    @media screen and(max-width: 768px){
+        max-width:600px;
+    }
+
 }
 
 img{
@@ -47,10 +51,14 @@ h3{
     @media screen and(max-width:1200px){
 
     }
+    @media screen and(max-width: 900px){
+        // flex-direction: column;
+        flex-wrap: wrap;
+    }
     @media screen and(max-witdh: 768px){
         flex-direction: column;
         flex-wrap: wrap;
+        align-content: center;
     }
 }
-
 

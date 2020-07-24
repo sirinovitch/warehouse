@@ -13,13 +13,11 @@ window.addEventListener('scroll',function() {
 
     if (dejaScrollay >= 100) {
 
-        console.log("j'ai dépassé les 100 pixels");
 
         monHeader.classList.add("nav-js");
 
     } else {
 
-        // console.log("je suis sous les 100 pixels");
 
         monHeader.classList.remove("nav-js");
 
@@ -27,3 +25,37 @@ window.addEventListener('scroll',function() {
     }
 
 })
+
+// burger
+
+var monBurger = document.getElementById('burger');
+
+
+var mesLinks = document.querySelector('.links');
+
+var maCroix = document.querySelector('#closed');
+
+
+
+console.log(monBurger);
+
+
+
+function ajoutClasse() { 
+
+    monBurger.classList.add('active');
+
+    mesLinks.classList.add('active');
+
+    maCroix.classList.add('closed');
+
+}
+
+function retireClasse() {
+    maCroix.classList.remove('closed');
+    mesLinks.classList.remove('active');
+}
+
+monBurger.addEventListener("click", ajoutClasse);
+
+maCroix.addEventListener("click",retireClasse);
